@@ -2,7 +2,7 @@
 
 const inquirer = require('inquirer'); //inquirer.js is a collection of common interactive command line user interfaces. We will use inquirer.prompt method
 const fs = require('fs'); //fs is a nodejs library package for reading/writting files. We will use fs.writeFile() method.
-const { ifError, ok } = require('assert');
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // Create an array of questions for user input
 const questions = [
