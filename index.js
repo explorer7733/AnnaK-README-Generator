@@ -9,32 +9,51 @@ const questions = [
     {
         type: "input",
         message: "What is your project's title?",
-        name: "text",
+        name: "title",
     },
     {
         type: "input",
-        message: "Describe your project",
-        name: "text",
+        message: "Describe your project:",
+        name: "description",
+    },
+    {
+        type: "input",
+        message: "Describe an installation process, if applicable:",
+        name: "installation",
+    },
+    {
+        type: "input",
+        message: "What does user needs to know about using the README Generator?",
+        name: "usage",
     },
     {
         type: "input",
         message: "What kind of license does your project have?",
-        name: "text",
+        name: "license",
+    },
+    {
+        type: "input",
+        message: "List the technologies used, additional resources:",
+        name: "contributing",
+    },
+    {
+        type: "input",
+        message: "What command should be run to run tests?",
+        name: "tests",
     },
     {
         type: "input",
         message: "What is your GitHub username?",
-        name: "text",
+        name: "github",
     },
     {
         type: "input",
         message: "What is your email address?",
-        name: "text",
+        name: "email",
     },   
 ];
 
-
-// TODO: Create a function to write README file
+//Create a function to write README file
 function writeToFile(fileName, data) {
     return new Promise((resolve, reject) => {
         fs.writeFile(fileName, data, error => {
@@ -50,8 +69,21 @@ function writeToFile(fileName, data) {
     });
  };
 
-// TODO: Create a function to initialize app
-function init() { }
+//Create a function to initialize app
+function init() { 
+    inquirer.prompt(questions)
+    .then(answers => {
+        console.log(answers);
+        return generateMarkdown(answers);
+    })
+    .then(pageMarkdown => {
+        writeToFile('README.md', pageMarkdown);
+        console.log('README.md created');
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+}
 
 // Function call to initialize app
 init();
