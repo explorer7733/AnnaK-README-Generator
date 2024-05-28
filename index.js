@@ -50,7 +50,7 @@ const questions = [
         type: "input",
         message: "What is your email address?",
         name: "email",
-    },   
+    },
 ];
 
 //Create a function to write README file
@@ -67,22 +67,22 @@ function writeToFile(fileName, data) {
             });
         });
     });
- };
+};
 
 //Create a function to initialize app
-function init() { 
+function init() {
     inquirer.prompt(questions)
-    .then(answers => {
-        console.log(answers);
-        return generateMarkdown(answers);
-    })
-    .then(pageMarkdown => {
-        writeToFile('README.md', pageMarkdown);
-        console.log('README.md created');
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+        .then(answers => {
+            console.log(answers);
+            return generateMarkdown(answers);
+        })
+        .then(pageMarkdown => {
+            writeToFile('README.md', pageMarkdown);
+            console.log('README.md created');
+        })
+        .catch((error) => {
+            console.log(error);
+        });
 }
 
 // Function call to initialize app
