@@ -1,7 +1,7 @@
 # README
   
   ## Description
-  My first project written with Node.js
+  my first project
   
   ## Table of Contents
   * [Installation](#installation)
@@ -12,22 +12,22 @@
   * [Questions](#questions)
 
   ## Installation
-  Not applicable
+  n 
 
   ## Usage
-  README Generator is a template of README file, which simplifies writting README file
+  install
 
   ## License
-  This application is covered by [MIT](https://opensource.org/licenses/MIT).
+  
 
   ## Contributing
-  Node.js
+  d
 
   ## Tests
-  npm test
+  f
 
   ## Questions
-  ![Link to my GutHub Profile](https://github.com/explorer7733)
-  If you have any questions, please reach out to me at xxxxxxxx@yahoo.com  
+  ![Link to my GutHub Profile](https://github.com/dfgd)
+  If you have any questions, please reach out to me at gdg  
   
   
