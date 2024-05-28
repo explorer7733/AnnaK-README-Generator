@@ -1,7 +1,7 @@
 # README Generator
   
   ## Description
-  Template to create a professional README file for any furture projects
+  Template to create a professional README file for any future projects
   
   ## Table of Contents
   * [Installation](#installation)
@@ -15,7 +15,7 @@
   npm init, npm i inquirer@8.2.4
 
   ## Usage
-  use the terminal, then answer the prompts
+  use the treminal, then answer the prompts
 
   ## License
   This application is covered by [MIT](https://opensource.org/licenses/MIT).
@@ -28,6 +28,7 @@
 
   ## Questions
   ![Link to my GutHub Profile](https://github.com/explorer7733)
-  If you have any questions, please reach out to me at xxxxxxx@yahoo.com  
+  If you have any questions, please reach out to me at xxxxx@yahoo.com  
   
-  
+  ## Link to the video
+  ![Link to my video](https://drive.google.com/file/d/1YzLTRPea2z4RyXLGqK1fIpxlkrfEMcgi/view)
